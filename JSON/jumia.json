@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+        "name": "Formal shoes",
+        "description": "This can be used for everyday wear and for formal occasions.",
+        "price": 50000
+    },
+    {
+        "id": 2,
+        "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name": "Oraimo HeadPhones",
+        "description": "Cheap and affordable headphones with good sound quality.",
+        "price": 15000
+    },
+    {
+        "id": 3,
+        "image": "https://media.istockphoto.com/id/1366569235/photo/sofa-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=tIrsy0P78CdDNk7wJ-o9QBgA9Dw_53dmX9PQhsYABpY=",
+        "name": " McLinen Sofa",
+        "description": "Comfortable and stylish sofa for your living room.",
+        "price": 1500000
+    },
+    {
+        "id": 4,
+        "image": "https://images.pexels.com/photos/13189272/pexels-photo-13189272.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name": "Ps5 Console",
+        "description": "This PlayStation 5 is a home video game console developed by Sony Interactive Entertainment.",
+        "price": 105000
+    },
+    {
+        "id": 5,
+        "image": "https://media.istockphoto.com/id/1389851445/photo/house-slippers-sleeping-mask-and-pajamas-on-light-blue-background-flat-lay.jpg?b=1&s=612x612&w=0&k=20&c=JeRgkCrmA006QxfTsgu6qomM8bWBD0UeM4QdU-aDmQo=",
+        "name": " Victoria's Secret Pyjamas Full Set",
+        "description": "This pyjamas is made of cotton and is very comfortable to wear.",
+        "price": 35000
+    },
+    {
+        "id": 6,
+        "image": "https://images.pexels.com/photos/3766180/pexels-photo-3766180.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name": "City Kids Water Bottle",
+        "description": "Quenches your thirst in a jiffy.",
+        "price": 15000
+    },
+    {
+        "id": 7,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9MR6nBMEr1G3NUrQHDgyP0mFW1WokLF8qZA&s",
+        "name": "TV",
+        "description": "This is a 55 inch smart TV with 4K resolution and HDR support.",
+        "price": 350000
+    },
+    {
+        "id": 8,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa-P70TxQIw1Oh4UzrmC1HjKIWCDdQDV17YQ&s",
+        "name": "Bicycle",
+        "description": "This is a mountain bike with 21 speed gears and front suspension.",
+        "price": 455000
+    },
+    {
+        "id": 9,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpOrBBRmnHFZPrc8rf5KG-9FFIPTRZtDEUSw&s",
+        "name": " Believers Crocs",
+        "description": "These are comfortable and stylish crocs for everyday wear.",
+        "price": 35000
+    },
+    {
+        "id": 10,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD2CpfihVZIpSI94mBTOLurFok2pUmIvHncA&s",
+        "name": "Bakeware Set",
+        "description": "This is a 10 piece bakeware set made of high quality non-stick material.",
+        "price": 15000
+    }
+    
+]

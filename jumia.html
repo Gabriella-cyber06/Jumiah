@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="JApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia | Nigeria</title>
+    <script src="angular-1.7.9/angular.min.js"></script>
+    <script src="/angular-1.7.9/angular-route.js"></script>
+    <script src="Scripts/jumia.js"></script>
+    <link rel="stylesheet" href="Styles/jumia.css">
+
+</head>
+<body ng-controller="JCtrl">
+    <div class="header" style="background-color: #eee; height: 35px;" >
+        <img src="https://img.icons8.com/?size=100&id=enP6M_u0BXV3&format=png&color=FF8C00" alt="logo" class="logo">
+        <p style="color: orange;">{{"Sell on Jumiah"}}</p>
+    </div>
+    <div class="header" style="background-color: white">
+        <h2>JUMIAH</h2>
+        <img src="https://img.icons8.com/?size=100&id=enP6M_u0BXV3&format=png&color=FF8C00" alt="logo" class="cart">
+        <input type="text" ng-model="tempSearch" placeholder="Search products" class="search">
+        <button ng-click="applySearch()">Search</button>
+
+        <div class="header-icons" ng-controller="CartHeaderCtrl">
+            <img src="https://img.icons8.com/?size=100&id=fJ7hcfUGpKG7&format=png&color=000000" alt="logo" class="cart">
+            <p><a href="#!/home">Home</a></p>
+            <img src="https://img.icons8.com/?size=100&id=646&format=png&color=000000" alt="logo" class="cart">
+            <p><a href="#!/help">Help</a></p>
+            <img src="https://img.icons8.com/?size=100&id=9671&format=png&color=000000" alt="logo" class="cart">
+            <span>{{ cartCount}}</span>
+            <p><a href="#!/cart">Cart</a></p>
+        </div>
+    </div>
+    <div>
+        <a href="#!/products">Products</a> 
+    </div>
+    <div ng-view></div>
+    
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<div>
+    <div class="container" id="c2" ng-controller="ProductDetailsCtrl">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsoNzTQQ3-_f_R-ge0yE4BPgN5RsJbyuqqiQ&s" 
+        alt="advert" style="height: 80px; width:80px">
+        <h2>Welcome to Jumiah</h2> <br>
+        <p>Discover the best deals on electronics, fashion, home appliances, and more!</p>
+        <br><br><br>
+        <button type="button" style="background-color: green;  height: 40px;">Buy Now</button>
+    </div>
+    <div class="contain">
+        <div style="background-color: white; padding: 10px; border-radius: 5px; width: 550px; height: fit-content;">
+            <h2>Categories</h2>
+            <ul>
+                <li>Electronics</li>
+                <li>Fashion</li>
+                <li>Home & Living</li>
+                <li>Beauty</li>
+                <li>Sports</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card" ng-repeat="product in products | filter:tempSearch">
+            <img ng-src="{{product.image}}" alt="{{product.name}}">
+            <h3>{{product.name}}</h3>
+            <p> Price:  ₦{{product.price | number}} </p>
+            <button ng-click="viewDetails(product)">View Details</button>
+            </div>
+        </div>
+    </div>
+</div>

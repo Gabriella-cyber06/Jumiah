@@ -1,0 +1,11 @@
+<div class="container" ng-controller="ProductDetailsCtrl">
+  <div  ng-if="product">
+      <h2>Product Details</h2>
+      <img ng-src="{{product.image}}" alt="{{product.name}}">
+      <h3>{{product.name}}</h3>
+      <p>{{product.description}}</p>
+      <p>₦{{product.price | number}}</p>
+      <button ng-click="addToCart(product)">Add to Cart</button>
+  </div>
+  
+</div>

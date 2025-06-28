@@ -1,0 +1,56 @@
+<div class="container" ng-controller="CartCtrl">
+    <div ng-if="cart.length === 0">
+        <p>Your cart is empty. <a href="#!/products"><span style="color:blue">Shop Now</span></a></p>
+    </div>
+
+    <div ng-if="cart.length > 0" class="contain">
+       <div>
+            <h2>Your Cart</h2>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>Product</th>
+                    <th>Price (₦)</th>
+                    <th>Qty</th>
+                    <th>Subtotal (₦)</th>
+                    <th>Action</th>
+                </tr>
+                <tr ng-repeat="item in cart">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price | number}}</td>
+                    <td><input type="number" min="1" ng-model="item.quantity" ng-change="updateQty(item)"></td>
+                    <td>{{item.price * item.quantity | number}}</td>
+                    <td><button ng-click="removeItem(item)">Remove</button></td>
+                </tr>
+            </table>
+            <!-- Coupon Section -->
+            <div style="margin-top: 20px;">
+                <h4>Use the code <span style="color: orange;">"powerlabsx"</span> to apply for a discount</h4>
+                <label>Coupon Code:</label>
+                <input type="text" ng-model="couponCode" placeholder="Enter coupon code">
+                <button ng-click="applyCoupon()">Apply</button>
+                <p ng-if="discount > 0" style="color: green;">Coupon applied! You get ₦{{ discount | number }} off.</p>
+                <p ng-if="invalidCoupon" style="color: red;">Invalid coupon code!</p>
+            </div>
+
+            <!-- Total Section -->
+            <h3>Subtotal: ₦{{ getTotalBeforeDiscount() | number }}</h3>
+            <h3>Total after discount: ₦{{ getTotal() | number }}</h3>
+            <h3>Discount: ₦{{ discount | number }}</h3>
+            <br><br><br><br>
+            <a href="#!/products"><span style="color:blue">Return back to home</span></a></p>
+        </div>
+        <div style="background-color: aliceblue;  margin-left: 250px;" class="card">
+            <h4><span style="color: orange;">Checkout Form</span></h4>
+            <form ng-submit="checkout()">
+                <label>Name:</label>
+                <input type="text" required>
+                <br><br><br>
+
+                <label>Delivery Address:</label><br>
+                <textarea required></textarea><br><br>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+   </div>
+</div>
