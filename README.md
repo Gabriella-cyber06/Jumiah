@@ -1,10 +1,10 @@
-Jumiah - AngularJS eCommerce Website
+<!-- Jumiah - AngularJS eCommerce Website -->
 
 A shopping website that uses AngularJS, HTML, CSS and JSON
 
 This project is a simple Jumia-style eCommerce website built with AngularJS (v1.7.9). It includes key e-commerce features like product browsing, viewing product details, managing a shopping cart, applying discounts with coupons, and a checkout form.
 
-Features
+<!-- Features -->
 
  1.   Product Listing Page Functionality
  2.   Product Details View Functionality
@@ -16,7 +16,7 @@ Features
  8.   Cart Persistence via "localStorage"
  9.   Routing with "ngRoute"
 
-Project Structure
+<!-- Project Structure -->
 
 jumiah/ 
 │ ├── index.html # Main entry point 
@@ -33,3 +33,6 @@ jumiah/
 ├── JSON/ 
 │ └── jumia.json # Product data in JSON format 
 └── README.md # This file
+
+<!-- How to use -->
+ Go to 
