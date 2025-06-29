@@ -69,11 +69,11 @@ Steps:
   =>  When you find a product you like, click the "View Details" button.
 
   =>  You’ll be taken to a page showing:
-       1. The full-size image
-       2. The product name
-       3. A detailed description
-       4. The price
-       5. An Add to Cart button
+        The full-size image
+        The product name
+        A detailed description
+        The price
+        An Add to Cart button
 
 
 <!-- 4. Adding Items to Your Cart -->
