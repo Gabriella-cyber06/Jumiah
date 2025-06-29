@@ -29,7 +29,6 @@
                 <button ng-click="applyCoupon()">Apply</button>
                 <p ng-if="discount > 0" style="color: green;">Coupon applied! You get ₦{{ discount | number }} off.</p>
                 <p ng-if="invalidCoupon" style="color: red;">Invalid coupon code!</p>
-            </div>
 
             <!-- Total Section -->
             <h3>Subtotal: ₦{{ getTotalBeforeDiscount() | number }}</h3>
