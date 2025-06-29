@@ -3,23 +3,23 @@ var app = angular.module("JApp", ["ngRoute"]);
 app.config(function($routeProvider){
     $routeProvider
     .when('/products', {
-        templateUrl: 'products.html', 
+        templateUrl: 'Components/products.html',
         controller: 'JCtrl'
     })
     .when('/product/:id', {
-        templateUrl: 'product-details.html',
+        templateUrl: 'Components/product-details.html',
         controller: 'ProductDetailsCtrl'
     })
     .when('/cart', {
-        templateUrl: 'cart.html',
+        templateUrl: 'Components/cart.html',
         controller: 'CartCtrl'
     })
     .when('/home', {
-        templateUrl: 'products.html',
+        templateUrl: 'Components/products.html',
         controller: 'JCtrl'
     })
     .when('/help', {
-        templateUrl: 'help.html'
+        templateUrl: 'Components/help.html'
     })
     .otherwise({
         redirectTo: '/products'
